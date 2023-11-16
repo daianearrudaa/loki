@@ -1,0 +1,75 @@
+
+.hero{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; 
+ 
+    @media (max-width:991px){
+       max-height: 500px;    
+    }
+
+    @media (max-width:768px){
+        max-height: 350px;    
+     }
+
+     
+    &__content{
+        
+
+
+        &__video{
+            width: 100%;
+            min-height: 700px;
+            cursor: pointer;
+            position: relative;
+      
+        }
+
+        &__img{
+            position: absolute;
+            top: 0vh;
+            left: 0;
+            width: 100%;
+            min-height: 100%;
+            transition: transform 0.8s ease; 
+            cursor: pointer;
+            
+           
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        &__icon{
+            position: absolute;
+            top: 8vh;
+            left: 40%;
+            width: 20vh;
+            height: 80%;
+            transition:0.5s;
+            z-index: 999;
+            color: aliceblue;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width:991px){
+                width: 10vh;    
+             }
+
+            &:hover{
+                color: rgba(206, 208, 209, 0.575);
+            }
+            
+        }
+
+        .hidden{
+            display: none;
+        }
+
+    }
+}
+
+   

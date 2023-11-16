@@ -1,0 +1,34 @@
+@use './variaveis';
+
+
+.header {
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(to right,black,rgb(10, 34, 4));
+  box-shadow: 0 0 8px 10px rgb(3, 15, 0); 
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  position: sticky;
+  
+
+  &__span {
+    text-align: center;
+    font-family: 'Cabin Sketch', sans-serif;
+  }
+
+  &__svg{
+    font-weight:bold;
+    max-width:500px;
+    height:auto;
+    cursor: pointer;
+
+    @media (max-width:768px){
+      width: 50vw;
+      
+  }
+  }
+
+}

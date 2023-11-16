@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <svg class="header__svg" viewbox="0 0 100 20">
+                <defs>
+                  <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="5%" stop-color="#ecf0f1"/>
+                    <stop offset="95%" stop-color="#bdc3c7"/>
+                  </linearGradient>
+                  <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                    <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                      <animateTransform
+                          attributeName="transform"
+                          begin="0s"
+                          dur="1.5s"
+                          type="translate"
+                          from="0,0"
+                          to="40,0"
+                          repeatCount="indefinite" />
+                    </path>
+                  </pattern>
+                </defs>
+                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="0.6">Assista agora</text>
+                <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#gradient)" fill-opacity="0.1">Assista agora</text>
+            </svg>           
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <a id="video-link" href="https://www.disney.com.br/video/loki-marvel-studios-trailer-oficial-legendado-disneyplus">
+            <iframe id="hero__content__video" class="hero__content__video"  width="640" height="360" src="https://secure.disney.com/embed/5bf3f72a7c1c0ebd6b4f2a72?domain=www.disney.com.br" allowfullscreen frameborder="0"></iframe><br/></a>
+
+            <img class="hero__content__img" id="hero__content__img" src="./src/images/hero.jpg" alt="">
+            <svg class="hero__content__icon" id="hero__content__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" />
+            </svg>
+        </div>
+    </section>
+
+    <section class="trailers">
+        <div class="trailers__content">
+          <div class="trailers__content__title">
+            <h2>Quer saber mais sobre Loki e receber todas as novidades da Marvel?</h2>
+            <button type="submit"><h1 class="title">Cadastre-se aqui</h1></button>
+          </div>
+
+          <div class="trailers__content__posters ">
+
+            <div class="trailers__content__posters__item">
+              <img class="slider" src="./src/images/loki-1.jpg" alt="">
+            </div>
+            <div class="trailers__content__posters__item">
+              <img class="slider" src="./src/images/loki-2.jpeg" alt="">
+            </div>
+            <div class="trailers__content__posters__item">
+              <img class="slider" src="./src/images/loki-4.jpeg" alt="">
+            </div>
+        
+           </div>
+           
+    
+        </div>
+      </section>
+
+    <section class="resumo">
+
+        <div class="resumo__img">
+            <img src="./dist/images/resumo.jpeg" alt="">
+        </div>
+        <div class="resumo__texto text">
+            <h2>Loki</h2>
+            <p>Em Loki, da Marvel Studios, o vilão da mitologia nórdica interpretado por Tom Hiddleston retorna como Deus da Travessura em uma história que sucede os acontecimentos de Vingadores: Ultimato. A série com direção de Kate Herron e roteiro de Michael Waldron estreia no Disney+ em 11 de junho e conta com Tom Hiddleston, Owen Wilson, Sophia Di Martino e Gugu Mbatha-Raw no elenco.</p><br>
+            <h4>Dirigido por</h4>
+            <p>Kate Herron</p><br>
+            <h4>Elenco</h4>
+            <p>Tom Hiddleston, Owen Wilson, Gugu Mbatha-Raw, Sophia Di Martino, Wunmi Mosaku, Richard E. Grant</p>
+        </div>
+    </section>  
+
+    <section class="novidades">
+        <div class="novidades__item1">
+            <img src="./src/images/bw_lokimtvawards16_ec92918d.jpeg" alt="">
+            <div class="texto-novidades1">
+                <p>Novidades Marvel</p><br>
+                <h4>Veja vídeos com imagens inéditas de Loki e Viúva Negra</h4><br>
+                <p class="text-small">15 de Novembro de 2023 </p>
+            </div>
+        </div>
+
+        <div class="novidades__item2">
+            <img src="./src/images/loki600x800_da3d579c.jpeg" alt="">
+            <div class="texto-novidades2">
+            <p>Novidades Disney+</p><br>
+            <h4>Marvel apresenta o trailwe de Loki, a nova série da Disney+</h4><br>
+            <p class="text-small">10 de Outubro de 2023 </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cronologia">
+        <h1 class="title">Confira aqui a cronologia completa dos filmes da Marvel</h1>
+        <div class="container">
+        <button class="arrow-left control" aria-label="Previous image">◀</button>
+        <button class="arrow-right control" aria-label="Next Image">▶</button>
+        <div class="gallery-wrapper">
+        <div class="gallery">
+      <!--       <div class="item current-item cyan"></div>
+      <div class="item deeppink"></div>
+      <div class="item turquoise"></div>
+      <div class="item darkblue"></div>
+      <div class="item purple"></div> -->
+      <div><img src="./src/images/1-oprimeirovingador.jpg" alt="Beach Image" class="item current-item">
+        <p>1943 / 1945 - Capitão América: O Primeiro Vingador</p>
+       </div>
+      <div>
+      <img src="./src/images/2-capitamarvel.jpg" alt="Animal Image" class="item current-item">
+        <p>1995 - Capitã Marvel</p>
+      </div>
+      <div>
+      <img src="./src/images/3-homemdeferro.webp" alt="Street Image" class="item current-item">
+        <p>2010 - Homem de Ferro</p>
+      </div>
+      <div>
+      <img src="./src/images/4-hulk.webp" alt="Zoo Image" class="item current-item">
+      <p>2011 - O Incrível Hulk</p>
+      </div>
+      <div>
+      <img src="./src/images/5-homemdeferro2.jpg" alt="Model Image" class="item current-item">
+      <p>2011 - Homem de Ferro 2</p>
+     </div>
+     <div>
+      <img src="./src/images/6-thor.webp" alt="Model Image" class="item current-item">
+      <p>2011 - Thor</p>
+    </div>
+    <div>
+      <img src="./src/images/7-vingadores.jpg" alt="Model Image" class="item current-item">
+      <p>2012 - Os Vingadores</p>
+    </div>
+    <div>
+      <img src="./src/images/8-homemdeferro3.jpg" alt="Model Image" class="item current-item">
+      <p>2012 - Homem de Ferro 3</p>
+    </div>
+    <div>
+      <img src="./src/images/9-thor.jpg" alt="Model Image" class="item current-item">
+      <p>2013 - Thor: O Mundo Sombrio</p>
+    </div>
+    <div>
+      <img src="./src/images/10-capitaoamerica2.jpg" alt="Model Image" class="item current-item">
+      <p>2014 - Capitão América 2 - O Soldado Invernal</p>
+    </div>
+    <div>
+      <img src="./src/images/11-guardioesdagalaxia.jpg" alt="Model Image" class="item current-item">
+      <p>2014 - Guardiões da Galáxia</p>
+    </div>
+    <div>
+      <img src="./src/images/12-guardioes2.jpg" alt="Model Image" class="item current-item">
+      <p>2014 - Guardiões da Galáxia Vol. 2</p>
+    </div>
+    <div>
+      <img src="./src/images/13-vingeradeultron.jpg" alt="Model Image" class="item current-item">
+      <p>2015 - Vingadores: Era de Ultron</p>
+    </div>
+    <div>
+      <img src="./src/images/14-homemformiga.jpg" alt="Model Image" class="item current-item">
+      <p>2015 - Homem-Formiga</p>
+    </div>
+    <div>
+      <img src="./src/images/15-guerracivil.jpg" alt="Model Image" class="item current-item">
+      <p>2016 - Capitão América: Guerra Civil</p>
+    </div>
+    <div>
+      <img src="./src/images/16-viuvanegra.jpg" alt="Model Image" class="item current-item">
+      <p>2016 - Viúva Negra </p>
+    </div>
+    <div>
+      <img src="./src/images/17-homemaranha.jpg" alt="Model Image" class="item current-item">
+      <p>2016 - Homem-Aranha: De Volta ao Lar</p>
+    </div>
+    <div>
+      <img src="./src/images/18-drestranho.jpg" alt="Model Image" class="item current-item">
+      <p>2016 / 2017 - Doutor Estranho</p>
+    </div>
+    <div>
+      <img src="./src/images/19-panteranegra.jpg" alt="Model Image" class="item current-item">
+      <p>2017 - Pantera Negra</p>
+    </div>
+    <div>
+      <img src="./src/images/20-ragnarok.jpg" alt="Model Image" class="item current-item">
+      <p>2017 - Thor: Ragnarok</p>
+    </div>
+    <div>
+      <img src="./src/images/21-formigaevespa.jpg" alt="Model Image" class="item current-item">
+      <p>2017 - Homem-Formiga e a Vespa</p>
+    </div>
+    <div>
+      <img src="./src/images/22-guerrainfinita.jpg" alt="Model Image" class="item current-item">
+      <p>2017 - Vingadores: Guerra Infinita</p>
+    </div>
+    <div>
+      <img src="./src/images/23-ultimato.jpg" alt="Model Image" class="item current-item">
+      <p>2018 / 2023 - Vingadores: Ultimato</p>
+    </div>
+    <div>
+      <img src="./src/images/24-wandavision.jpg" alt="Model Image" class="item current-item">
+      <p>2023 - WandaVision</p>
+    </div>
+    <div>
+      <img src="./src/images/25-falcao.jpg" alt="Model Image" class="item current-item">
+      <p>2023 - Falcão e o Soldado Invernal</p>
+    </div>
+    <div>
+      <img src="./src/images/26-shang-chi.jpg" alt="Model Image" class="item current-item">
+      <p>2023 / 2024 - Shang-Chi e a Lenda dos Dez Anéis</p>
+    </div>
+    <div>
+      <img src="./src/images/27-aranhalongedecasa.webp" alt="Model Image" class="item current-item">
+      <p>2024 - Homem-Aranha: Longe de Casa</p>
+    </div>
+    <div>
+      <img src="./src/images/28-aranhasemvolta.webp" alt="Model Image" class="item current-item">
+      <p>2024 - Homem-Aranha: Sem Volta para Casa</p>
+    </div>
+    <div>
+      <img src="./src/images/29-eternos.webp" alt="Model Image" class="item current-item">
+      <p>2024 - Eternos</p>
+    </div>
+    <div>
+      <img src="./src/images/30-estranho.jpg" alt="Model Image" class="item current-item">
+      <p>2024 - Doutor Estranho no Multiverso da Loucura </p>
+    </div>
+    <div>
+      <img src="./src/images/31-gaviao.jpg" alt="Model Image" class="item current-item">
+      <p>2024 - Gavião Arqueiro </p>
+    </div>
+    <div>
+      <img src="./src/images/32-cavaleirodalua.webp" alt="Model Image" class="item current-item">
+      <p>2025 - Cavaleiro da Lua</p>
+    </div>
+    <div>
+      <img src="./src/images/33-wakandasempre.jpg" alt="Model Image" class="item current-item">
+      <p>2025 - Pantera Negra: Wakanda Para Sempre</p>
+    </div>
+    <div>
+      <img src="./src/images/34-mulherhulk.webp" alt="Model Image" class="item current-item">
+      <p>2025 - Mulher-Hulk: Defensora de Heróis</p>
+    </div>
+    <div>
+      <img src="./src/images/35-msmarvel.jpg" alt="Model Image" class="item current-item">
+      <p>2025 - Ms. Marvel</p>
+    </div>
+    <div>
+      <img src="./src/images/36-thor.jpg" alt="Model Image" class="item current-item">
+      <p>2025 - Thor: Amor e Trovão </p>
+    </div>
+    <div>
+      <img src="./src/images/37-lobisomemdameianoite.webp" alt="Model Image" class="item current-item">
+      <p>2025 - Lobisomem na Noite</p>
+    </div>
+    <div>
+      <img src="./src/images/38-especialguardioes.jpg" alt="Model Image" class="item current-item">
+      <p>2025 - Especial de Fim de Ano Guardiões da Galáxia</p>
+    </div>
+    <div>
+      <img src="./src/images/39-quantumania.jpg" alt="Model Image" class="item current-item">
+      <p>2026 - Homem-Formiga e a Vespa: Quantumania</p>
+    </div>
+    <div>
+      <img src="./src/images/40-guardioes3.webp" alt="Model Image" class="item current-item">
+      <p>2026 - Guardiões da Galáxia Vol. 3</p>
+    </div>
+    <div>
+      <img src="./src/images/41-invasaosecreta.jpg" alt="Model Image" class="item current-item">
+      <p>2026 - Invasão Secreta</p>
+    </div>
+
+     </div>
+      </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class_footer__links>
+        <ul>
+            <li>
+              <a href="https://www.instagram.com/daianearruda_/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+               </a>
+              </li>
+
+            <li><a href="https://www.linkedin.com/in/daiane-arruda" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+            </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/daianearrudaa" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"  fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              </a>
+            </li>
+
+        </ul>
+        </div>
+        <h5>Desenvolvido por <span>Daiane Arruda</span></h5>
+    </footer>
+
+    
+<script src="./Glider.js-master/glider.js" defer></script>
+<script src="./src/scripts/main.js"></script>
+</body>
+</html>
+
+

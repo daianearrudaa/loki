@@ -1,0 +1,90 @@
+@use './variaveis';
+
+.trailers{
+    background-color: variaveis.$corFonteSecundaria;
+
+    &__content{
+        padding-bottom: 10vh
+        
+        ;
+
+        &__title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10vh;
+            color: variaveis.$corFontePrimaria;
+            text-align: center;
+
+            button{
+                margin-top: 5vh;
+                width: 20vw;
+                height: 5vh;
+                box-shadow: 1px 2px 20px green;
+                border-radius: 20px;
+                border: none;
+                cursor: pointer;
+                transition: transform 0.8s ease;
+
+                @media (max-width:768px){
+                    width: 30vw;
+                    
+                }
+
+                &:hover{
+                    transform:scale(1.1) ;
+                }
+
+                h1{
+                    font-size: 20px;
+                    margin: 0 auto;
+                    @media (max-width:880px){
+                        font-size: 15px;
+                        
+                    }
+                }
+            }
+
+        }
+
+        &__posters{
+            display: flex;
+            padding-top: 10vh;
+            justify-content: center;
+
+
+            @media (max-width:1200px){
+                flex-direction: column;
+                align-items: center;
+                
+            }
+
+            &__item{
+                margin: 10px;
+                transition: transform 0.9s ease; 
+                
+
+                img{
+                    height: 500px;
+
+                    @media (max-width:1200px){
+                        min-width: 700px;
+                        min-height: 800px;
+                        
+                    }
+
+                    @media (max-width:768px){
+                        min-width: 400px;
+                        min-height: 300px;
+                        
+                    }
+                    &:hover{
+                        transform: scale(1.02);
+
+                    }
+                }
+            }
+        }
+
+    }
+}

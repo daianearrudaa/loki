@@ -1,0 +1,57 @@
+@use './hero';
+@use './header';
+@use './variaveis';
+@use './trailers';
+@use './resumo';
+@use './novidades';
+@use './cronologia';
+@use './footer';
+
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Tilt Prism', sans-serif;
+    src: url(../fonts/TiltPrism-Regular.ttf);
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: 'Cabin Sketch', sans-serif;
+    src: url(../fonts/CabinSketch-Bold.ttf);
+    font-weight: 600;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+.text{
+    color:variaveis.$corFonteSecundaria;
+}
+
+.text-small{
+    font-size: 10px;
+}
+
+p{
+    font-family: 'Tilt Prism', sans-serif;
+}
+
+.title{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
