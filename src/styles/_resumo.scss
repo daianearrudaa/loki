@@ -1,11 +1,13 @@
 
 .resumo{
     background-color: rgb(180, 178, 176);
-    padding: 10vh 10vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     @media (max-width:768px){
         display: block;
