@@ -3,21 +3,32 @@
 .trailers{
     background-color: variaveis.$corFonteSecundaria;
 
+    h3{
+        text-align: center;
+        color: rgba(211, 163, 61, 0.849);
+        padding-top: 5em;
+        font-size: 2em;
+        font-family: 'Tilt Prism', sans-serif;
+    }
+
     &__content{
-        padding-bottom: 10vh
+        padding-bottom: 10vh;
+
         
-        ;
 
         &__title{
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 10vh;
+            padding-top: 5vh;
             color: variaveis.$corFontePrimaria;
             text-align: center;
+            background: linear-gradient(to right,black,rgb(10, 34, 4));
+            box-shadow: 0 0 8px 10px rgb(3, 15, 0); 
 
             button{
                 margin-top: 5vh;
+                margin-bottom: 5vh;
                 width: 20vw;
                 height: 5vh;
                 box-shadow: 1px 2px 20px green;
@@ -35,6 +46,8 @@
                     transform:scale(1.1) ;
                 }
 
+                
+
                 h1{
                     font-size: 20px;
                     margin: 0 auto;
@@ -49,9 +62,10 @@
 
         &__posters{
             display: flex;
-            padding-top: 10vh;
+            padding-top: 5vh;
             justify-content: center;
 
+            
 
             @media (max-width:1200px){
                 flex-direction: column;

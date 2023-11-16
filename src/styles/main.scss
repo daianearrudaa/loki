@@ -49,9 +49,16 @@
 
 p{
     font-family: 'Tilt Prism', sans-serif;
+    letter-spacing: 0.5px;
+    
 }
 
 .title{
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
+}
+
+
+body{
+    background-color: variaveis.$corFonteSecundaria;
 }
