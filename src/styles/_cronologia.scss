@@ -82,12 +82,13 @@
       background: linear-gradient(to right, transparent 0%, black 200%);
     }
     
+    
     .gallery {
       display: flex;
       flex-flow: row nowrap;
       gap: 15px;
   
-      div{
+      
         p{
           text-align: center;
           font-size: 18px;
@@ -96,7 +97,7 @@
              
           }
         }
-      }
+      
     }
     
     .item {
